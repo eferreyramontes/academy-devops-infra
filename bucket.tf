@@ -59,6 +59,6 @@ resource "aws_iam_policy" "deploy" {
 
 resource "aws_iam_user_policy_attachment" "deploy" {
   policy_arn = aws_iam_policy.deploy.arn
-  user = aws_iam_user.deploy.id
+  user       = aws_iam_user.deploy.id
 }
 
